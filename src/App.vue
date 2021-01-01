@@ -1,34 +1,49 @@
 <template>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Welcome />
+  <Header />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import Welcome from './components/Welcome.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    Welcome
   }
 }
 </script>
 
 <style>
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #F21DB9;
-    margin-top: 60px;
+  @font-face {
+    font-family: 'Flottflott';
+    src: local('Flottflott'),
+    url(./fonts/Flottflott.ttf) format('truetype');
   }
 
-  /* Color Theme Swatches in Hex */
-.bright-portfolio-idea-1-hex { color: #F21DB9; }
-.bright-portfolio-idea-2-hex { color: #5E308C; }
-.bright-portfolio-idea-3-hex { color: #0388A6; }
-.bright-portfolio-idea-4-hex { color: #04D9D9; }
-.bright-portfolio-idea-5-hex { color: #05F2DB; }
+  :root {
+    --white-hex: #f5f5f5;
+    --black-hex: #1d152a;
+    --pink-hex: #F21DB9;
+    --purple-hex: #5E308C;
+    --dk-teal-hex: #0388A6;
+    --med-teal-hex: #04D9D9;
+    --lt-teal-hex: #05F2DB;
+  }
+
+  body {
+    background-color: var(--black-hex);
+  }
+  #app {
+    font-family: Flottflott, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 2rem;
+    color: var(--lt-teal-hex);
+    margin-top: 60px;
+  }
 
 /* Color Theme Swatches in RGBA */
 .bright-portfolio-idea-1-rgba { color: rgba(242, 29, 185, 1); }
