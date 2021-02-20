@@ -1,17 +1,20 @@
 <template>
   <Welcome />
   <Header />
+  <Projects />
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import Welcome from './components/Welcome.vue'
+import Projects from './components/Projects.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Welcome
+    Welcome,
+    Projects
   }
 }
 </script>
@@ -36,6 +39,7 @@ export default {
   body {
     background-color: var(--black-hex);
   }
+  
   #app {
     font-family: Flottflott, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;

@@ -15,12 +15,11 @@ export default {
       me: me
     }
   }
- }
+}
 </script>
- <!-- Add "scoped" attribute to limit CSS to this component only -->
+<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   #me-img {
     height: 30vh;
-    fill: var(--pink-hex);
   }
 </style>

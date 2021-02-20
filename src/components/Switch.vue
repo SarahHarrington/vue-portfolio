@@ -1,10 +1,10 @@
 <template>
-  <img :src="sun" alt="">
+  <img :src="sun" alt="light color mode">
   <label class="switch">
-    <input type="checkbox">
-    <span class="slider round"></span>
+    <input true-value="light" false-value="dark" v-model="colorMode" type="checkbox">
+    <span @click="coloreModeChange" class="slider round"></span>
   </label>
-  <img :src="moon" alt="">
+  <img :src="moon" alt="dark color mode">
 </template>
 
 <script>
@@ -14,8 +14,15 @@ export default {
   name: 'Switch',
   data() {
     return {
+      colorMode: true,
       moon: moon,
       sun: sun
+    }
+  },
+  methods: {
+    coloreModeChange() {
+      console.log('color switch clicked')
+      
     }
   }
 }
