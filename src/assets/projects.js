@@ -1,5 +1,3 @@
-
-
 const projects = [
   {
     name: 'Movie Looker',

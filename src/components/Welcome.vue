@@ -1,6 +1,6 @@
 <template>
   <div class="welcome">
-    Hi! I'm Sarah!
+    <h1>Hi! I'm Sarah!</h1>
     <img id="me-img" :src="me" alt="">
   </div>
 </template>
